@@ -1,0 +1,227 @@
+---
+---
+@import "minima";
+$base-font-size: 20px;
+$base-font-weight: 600;
+$background-color: #101424;
+$text-color: #bc6c25;
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #dda15e;
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+pre,
+code {
+  font-size: $base-font-size * 0.9;
+  border: 0px solid $grey-color-light;
+  border-radius: 3px;
+  color: #101424;
+  background-color: #dda15e;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.site-header {
+  border-top: 0px solid #bc6c25;
+  border-bottom: 0px solid #101424;
+  min-height: $spacing-unit * 1.865;
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  font-size: $base-font-size * 1.5;
+  font-weight: 600;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -0.5px;
+  margin-bottom: 0;
+  float: left;
+  color: #dda15e;
+
+  &,
+  &:visited {
+    color: #dda15e;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: #dda15e;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 2px solid #bc6c25;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        fill: #dda15e;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      color: #dda15e;
+      display: block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+.page-heading {
+  font-size: $base-font-size * 1.75;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #dda15e;
+}
+
+.page-subheading {
+  font-size: $base-font-size * 0.85;
+  font-weight: 600;
+  margin-bottom: 0; 
+  color: #bc6c25
+}
+
+.post-link{
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post-meta{
+    font-size: $base-font-size * 0.75;
+    color: #bc6c25;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: $base-font-size * 1.5;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: $base-font-size * 1.35;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: $base-font-size * 1.20;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+h4 {
+    font-size: $base-font-size * 1.05;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-content {
+  font-size: $base-font-size * 0.75;
+  padding: $spacing-unit 0;
+  flex: 1;
+}
+
+a {
+    color: #dda15e;
+    text-decoration: underline;
+
+    &,
+    &:visited{
+        color: #dda15e;
+    }
+}
+

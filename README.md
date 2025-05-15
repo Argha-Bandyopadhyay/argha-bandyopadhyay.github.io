@@ -1,2 +1,1 @@
-# argha-bandyopadhyay.github.io
-personal website!
+# personal website!
