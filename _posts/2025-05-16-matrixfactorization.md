@@ -7,10 +7,11 @@ categories: explainer
 ---
 
 # motivation
-
 \[
-    Y \sim \mathcal{N}(X, \sigma)
+Y \sim \mathcal{N}(0, \sigma)
 \]
+
+hi! \(x\) is a variable name
 # approach
 
 # applications

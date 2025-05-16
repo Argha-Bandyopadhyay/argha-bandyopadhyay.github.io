@@ -1,7 +1,7 @@
 ---
 layout: homepage
 title: "hi!"
-subtitle: "welcome to my website"
+subtitle: ""
 ---
 # who is this guy?
 I'm an MD/PhD student at NYU Grossman School of Medicine, currently in the PhD phase of my training. I'm working with [Alex Williams][neurostatslab] (NYU / [Flatiron Institute][flatiron]) to develop probabilistic methods for neural data analysis. Prior to NYU, I went to the University of Texas at Austin (hook 'em horns!), where I worked with [Marcel Goldschen-Ohm][golab] on developing analysis software for high-throughput single-molecule data.
