@@ -214,7 +214,7 @@ h4 {
 }
 
 .page-content {
-  font-size: $base-font-size * 0.75;
+  font-size: $base-font-size * 0.85;
   padding: $spacing-unit 0;
   flex: 1;
 }
@@ -229,3 +229,9 @@ a {
     }
 }
 
+.MathJax {
+  font-size: $base-font-size * 0.85 !important;
+  tex: {
+      tags: 'ams';
+  }
+}
